@@ -1,20 +1,31 @@
-// OperatorOverLoading.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include "Header.h"
 
-#include <iostream>
+//In C++, operators are implemented as functions.
+//By using function overloading on the operator functions, 
+//you can define your own versions of the operators that work with 
+//different data types(including classes that you’ve written).
+//Using function overloading to overload operators is called operator overloading.
+
+
+//Limitations
+//First, almost any existing operator in C++ can be overloaded. 
+//The exceptions are: conditional (?:), sizeof, scope (::), member selector (.), 
+//member pointer selector (.*), typeid, and the casting operators.
+
+//Second, you can only overload the operators that exist.
+//You can not create new operators or rename existing operators.
+//For example, you could not create an operator ** to do exponents.
+
+//Third, at least one of the operands in an overloaded operator must be a user-defined type.
+//This means you can not overload the plus operator to work with one integer and one double.
+//However, you could overload the plus operator to work with an integer and a Mystring.
+
+//Fourth, it is not possible to change the number of operands an operator supports.
+
+//Finally, all operators keep their default precedenceand associativity
+//(regardless of what they’re used for) and this can not be changed.
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

@@ -147,7 +147,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArithmeticOperator.cpp" />
+    <ClCompile Include="AssignmentOperator.cpp" />
+    <ClCompile Include="ComparisonOperator.cpp" />
+    <ClCompile Include="IncrementDecrementOperator.cpp" />
+    <ClCompile Include="InutOutputOperator.cpp" />
     <ClCompile Include="OperatorOverLoading.cpp" />
+    <ClCompile Include="ParenthesisOperator.cpp" />
+    <ClCompile Include="SubscriptOperator.cpp" />
+    <ClCompile Include="TypeCast.cpp" />
+    <ClCompile Include="UnaryOperator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
